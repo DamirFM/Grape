@@ -15,15 +15,19 @@ import {
 
 
 export default function App() { 
-  console.log(Dimensions.get('screen'));
+  console.log(useWindowDimensions())
+  // console.log(Dimensions.get('screen'));
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{
+      {/* <View style={{
         backgroundColor: "dodgerblue",
         width: '100%',
         height: '30%',  
       }}>
-        </View>
+        </View> */}
+        <Image 
+        source={{uri: 'https://picsum.photos/200/300'}} 
+        style={{width: 200, height: 300}} />
     </SafeAreaView>
   );
 }
